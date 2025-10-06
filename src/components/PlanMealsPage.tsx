@@ -302,7 +302,7 @@ export default function PlanMealsPage({ onGeneratePlan, onAuthClick }: PlanMeals
           
           <button
             type="submit"
-            disabled={totalFamilySize === 0 || weeklyBudget <= 0 || loading}
+            disabled={totalFamilySize === 0 || weeklyBudget <= 0 || isLoading}
             className="bg-emerald-600 text-white px-8 py-4 rounded-xl hover:bg-emerald-700 
                      transition-colors flex items-center space-x-2 text-lg font-semibold mx-auto shadow-lg
                      disabled:opacity-50 disabled:cursor-not-allowed"
